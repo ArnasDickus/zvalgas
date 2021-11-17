@@ -3,8 +3,8 @@ import counterReducer, {
   increment,
   decrement,
   incrementByAmount,
-} from '../../../../store/modules/example/reducer';
-import {   CounterState } from '../../../../store/modules/example/types'; 
+} from '@store/modules/example/reducer';
+import {   CounterState } from '@store/modules/example/types'; 
 
 describe('counter reducer', () => {
   const initialState: CounterState = {

@@ -1,4 +1,4 @@
-import ExamplesPage from 'components/examples/examples-page';
+import ExamplesPage from '@components/examples';
 import { NextPage } from 'next';
 import React from 'react';
 

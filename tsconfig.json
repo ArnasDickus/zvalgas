@@ -1,7 +1,15 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": ".",
     "target": "es5",
+    "paths": {
+      "@public/*": ["public/*"],
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@store/*": ["src/store/*"],
+      "@styles/*": ["src/styles/*"],
+      "@constants/*": ["src/constants/*"]
+    },
     "lib": [
       "dom",
       "dom.iterable",
@@ -24,6 +32,12 @@
   "include": [
     "src"
   ],
+  "baseUrl": "./",
+  "paths": {
+    "@public/*": ["./public/*"],
+  },
+
+
   "exclude": [
     "node_modules"
   ]

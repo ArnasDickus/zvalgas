@@ -5,9 +5,8 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
-import HomePage from '../components';
+import HomePage from '@components/home-page';
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const Home: NextPage = () => {
   return (
     <div>
