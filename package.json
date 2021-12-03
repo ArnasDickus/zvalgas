@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.5.5",
     "@reduxjs/toolkit": "1.6.2",
     "@testing-library/jest-dom": "4.2.4",
     "@testing-library/react": "9.5.0",
@@ -15,6 +16,8 @@
     "@types/styled-components": "^5.1.15",
     "chart.js": "^3.6.0",
     "chartjs-plugin-datalabels": "^2.0.0",
+    "graphql": "^16.0.1",
+    "graphql.macro": "^1.4.2",
     "next": "12.0.4",
     "react": "17.0.2",
     "react-chartjs-2": "^3.3.0",
@@ -28,7 +31,9 @@
     "develop": "next dev",
     "build": "next build",
     "lint": "next lint --no-cache",
-    "start": "next start"
+    "start": "next start",
+    "generate": "graphql-codegen",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "browserslist": {
     "production": [
@@ -43,8 +48,12 @@
     ]
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "2.3.0",
     "@next/eslint-plugin-next": "12.0.4",
     "eslint-config-next": "12.0.4",
-    "eslint-config-prettier": "8.3.0"
+    "eslint-config-prettier": "8.3.0",
+    "@graphql-codegen/typescript-react-apollo": "3.2.2",
+    "@graphql-codegen/typescript-operations": "2.2.1",
+    "@graphql-codegen/typescript": "2.4.1"
   }
 }
