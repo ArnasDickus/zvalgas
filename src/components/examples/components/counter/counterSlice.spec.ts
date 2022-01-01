@@ -1,9 +1,10 @@
 import counterReducer, {
-  CounterState,
+
   increment,
   decrement,
   incrementByAmount,
-} from './counterSlice';
+} from '@store/modules/example/reducer';
+import {   CounterState } from '@store/modules/example/types'; 
 
 describe('counter reducer', () => {
   const initialState: CounterState = {

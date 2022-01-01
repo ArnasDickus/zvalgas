@@ -1,22 +1,9 @@
+
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { RootState, AppThunk } from '../../app/store';
-import { fetchCount } from './counterAPI';
+import { RootState, AppThunk } from '@store/store';
+import { fetchCount } from './counter-api';
+import { initialState } from './types';
 
-export interface CounterState {
-  value: number;
-  status: 'idle' | 'loading' | 'failed';
-}
-
-const initialState: CounterState = {
-  value: 0,
-  status: 'idle',
-};
-
-// The function below is called a thunk and allows us to perform async logic. It
-// can be dispatched like a regular action: `dispatch(incrementAsync(10))`. This
-// will call the thunk with the `dispatch` function as the first argument. Async
-// code can then be executed and other actions can be dispatched. Thunks are
-// typically used to make async requests.
 export const incrementAsync = createAsyncThunk(
   'counter/fetchCount',
   async (amount: number) => {
