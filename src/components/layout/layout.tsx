@@ -25,16 +25,12 @@ const Layout = (props: ILayout) => {
 export default Layout
 
 const LayoutContainer = styled.div`
-  min-height: 100%;
-  width: 100%;
-  position: relative;
 
 .header {
-   background: blue;
+
 }
 
 .main {
-   background: red;
    padding-bottom: 100px; 
 }
 
@@ -43,6 +39,5 @@ const LayoutContainer = styled.div`
    width: 100%;
    height: 100px;
    position: absolute;
-   background: yellow;
 }
 `;
