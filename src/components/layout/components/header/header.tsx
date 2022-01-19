@@ -1,22 +1,23 @@
 import React from 'react'
 import styled from 'styled-components';
 import Link from 'next/link'
+import { routes } from '@constants/routes';
 
 const Header = () => {
   return (
     <ContainerHeader>
       <div className="header_title_wrapper">
-        <Link href="/">
+        <Link href={routes.home}>
           <a>
             <h1 className="header_title">Žvalgas</h1>
           </a>
         </Link>
       </div>
       <nav className="nav_wrapper">
-        <Link href="/statistics">
+        <Link href={routes.statistics}>
           <a>Statistika</a>
         </Link>
-        <Link href="/articles">
+        <Link href={routes.articles}>
           <a>Straipsniai</a>
         </Link>
       </nav>
