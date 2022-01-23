@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react'
 import Footer from './components/footer';
 import Header from './components/header';
 import styled from 'styled-components';
+import { HeroSection } from './components/hero-section';
 
 interface ILayout  {
     children:  ReactNode
@@ -13,6 +14,9 @@ const Layout = (props: ILayout) => {
     <LayoutContainer>
       <div className="header">
         <Header />
+      </div>
+      <div>
+        <HeroSection />
       </div>
       <main className="main">{children}</main>
       <div className="footer">
