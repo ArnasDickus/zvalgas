@@ -11,7 +11,7 @@ const Footer = () => {
 
 export default Footer
 
-const ContainerFooter = styled.div`
+const ContainerFooter = styled.footer`
   display: flex;
   align-items: center;
   justify-content: center;

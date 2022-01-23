@@ -11,13 +11,13 @@ const Layout = (props: ILayout) => {
   const { children } = props;
   return (
     <LayoutContainer>
-      <header className="header">
+      <div className="header">
         <Header />
-      </header>
+      </div>
       <main className="main">{children}</main>
-      <footer className="footer">
+      <div className="footer">
         <Footer />
-      </footer>
+      </div>
     </LayoutContainer>
   )
 }
