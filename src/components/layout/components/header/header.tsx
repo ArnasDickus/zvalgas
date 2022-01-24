@@ -47,6 +47,7 @@ export default Header
 
 const ContainerHeader = styled.header`
   display: flex;
+  width: 100%;
   justify-content: space-between;
   margin-right: auto;
   margin-left:  auto;

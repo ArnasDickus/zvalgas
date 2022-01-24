@@ -12,16 +12,10 @@ const Layout = (props: ILayout) => {
   const { children } = props;
   return (
     <LayoutContainer>
-      <div className="header">
-        <Header />
-      </div>
-      <div>
-        <HeroSection />
-      </div>
+      <Header />
+      <HeroSection />
       <main className="main">{children}</main>
-      <div className="footer">
-        <Footer />
-      </div>
+      <Footer />
     </LayoutContainer>
   )
 }
@@ -29,19 +23,11 @@ const Layout = (props: ILayout) => {
 export default Layout
 
 const LayoutContainer = styled.div`
+   display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 
-.header {
-
-}
-
-.main {
-   padding-bottom: 100px; 
-}
-
-.footer {
-   bottom: 0;
-   width: 100%;
-   height: 100px;
-   position: absolute;
-}
+  .main {
+     flex-grow: 1;
+  }
 `;
