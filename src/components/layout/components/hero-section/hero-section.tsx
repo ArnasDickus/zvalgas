@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image'
 import HeroLayoutImage from '@public/images/layout/hero-layout.png'
-import { maxWidthBreakpoints, minWidthBreakpoints } from '@constants/breakpoints';
+import { maxWidthBreakpoints } from '@constants/breakpoints';
 
 const HeroSection = () => {
   return (
