@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react'
 import Footer from './components/footer';
 import Header from './components/header';
 import styled from 'styled-components';
+import { HeroSection } from './components/hero-section';
 
 interface ILayout  {
     children:  ReactNode
@@ -11,13 +12,10 @@ const Layout = (props: ILayout) => {
   const { children } = props;
   return (
     <LayoutContainer>
-      <header className="header">
-        <Header />
-      </header>
+      <Header />
+      <HeroSection />
       <main className="main">{children}</main>
-      <footer className="footer">
-        <Footer />
-      </footer>
+      <Footer />
     </LayoutContainer>
   )
 }
@@ -25,19 +23,11 @@ const Layout = (props: ILayout) => {
 export default Layout
 
 const LayoutContainer = styled.div`
+   display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 
-.header {
-
-}
-
-.main {
-   padding-bottom: 100px; 
-}
-
-.footer {
-   bottom: 0;
-   width: 100%;
-   height: 100px;
-   position: absolute;
-}
+  .main {
+     flex-grow: 1;
+  }
 `;
