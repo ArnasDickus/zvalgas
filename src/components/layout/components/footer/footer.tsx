@@ -48,7 +48,7 @@ const ContainerFooter = styled.footer`
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
-    color: #000000;
+    color: ${({ theme }) => theme.colors.black000 };
   }
 
   .footer_copyright_title {
