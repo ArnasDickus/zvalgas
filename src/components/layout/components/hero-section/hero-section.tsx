@@ -41,7 +41,7 @@ const ContainerHeroSection = styled.section`
 
   .text_side_subtitle {
     padding-top: 19px;
-    font-family: Inter;
+    font-family: Inter;       
     font-style: normal;
     font-weight: normal;
     font-size: 30px;

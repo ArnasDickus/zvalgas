@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components';
 import Link from 'next/link'
 import { routes } from '@constants/routes';
-import Image from 'next/image'
-import InstagramIcon from '@public/images/svg/instagram-icon.svg';
-import LinkedinIcon from '@public/images/svg/linkedin-icon.svg';
-import TwitterIcon from '@public/images/svg/twitter-icon.svg';
+// import Image from 'next/image'
+// import InstagramIcon from '@public/images/svg/instagram-icon.svg';
+// import LinkedinIcon from '@public/images/svg/linkedin-icon.svg';
+// import TwitterIcon from '@public/images/svg/twitter-icon.svg';
 
 const Header = () => {
   return (
